@@ -1,4 +1,4 @@
-package linux4.life.Final.models;
+package linux4.life.Final.Models;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,8 +1,10 @@
-package linux4.life.Final.models;
+package linux4.life.Final.Models;
+
+
+import javax.persistence.*;
 
 import lombok.Getter;
 import lombok.Builder;
-import javax.persistence.*;
 
 @Table(name="product")
 @Entity

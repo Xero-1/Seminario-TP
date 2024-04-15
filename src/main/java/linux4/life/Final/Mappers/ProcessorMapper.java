@@ -1,7 +1,7 @@
 package linux4.life.Final.Mappers;
 
 import linux4.life.Final.Dtos.Requests.ProcessorRequest;
-import linux4.life.Final.models.Product;
+import linux4.life.Final.Models.Product;
 import org.springframework.stereotype.Service;
 
 @Service

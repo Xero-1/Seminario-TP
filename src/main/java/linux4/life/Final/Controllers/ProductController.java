@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.ws.rs.Produces;
 import java.sql.SQLException;
 
-@RequestMapping("/products")
+@RequestMapping("/product")
 @Controller
 public class ProductController
 {

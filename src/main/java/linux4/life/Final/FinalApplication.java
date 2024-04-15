@@ -8,10 +8,6 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@EnableAutoConfiguration
-@ComponentScan
-@EnableConfigurationProperties
-@EntityScan(basePackages={"linux4.life.Final.models"})
 public class FinalApplication {
 
 	public static void main(String[] args) {

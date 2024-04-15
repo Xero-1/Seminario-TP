@@ -3,7 +3,7 @@ package linux4.life.Final.Mappers;
 import linux4.life.Final.Dtos.Requests.ProductRequest;
 import linux4.life.Final.Dtos.Responses.ProductResponse;
 import linux4.life.Final.Dtos.Responses.ProductsResponse;
-import linux4.life.Final.models.Product;
+import linux4.life.Final.Models.Product;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

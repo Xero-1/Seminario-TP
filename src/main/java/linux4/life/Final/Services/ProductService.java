@@ -3,7 +3,7 @@ package linux4.life.Final.Services;
 import linux4.life.Final.Dtos.Requests.ProductRequest;
 import linux4.life.Final.Dtos.Responses.ProductsResponse;
 import linux4.life.Final.Mappers.ProductMapper;
-import linux4.life.Final.models.Product;
+import linux4.life.Final.Models.Product;
 import linux4.life.Final.Repositories.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
