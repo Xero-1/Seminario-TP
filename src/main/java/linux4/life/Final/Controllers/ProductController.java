@@ -13,7 +13,7 @@ import javax.ws.rs.Produces;
 import java.sql.SQLException;
 
 @RequestMapping("/product")
-@Controller
+@RestController
 public class ProductController
 {
     @Autowired
@@ -44,7 +44,7 @@ public class ProductController
             return ResponseEntity.badRequest().body("No se pudo eliminar el producto.ERROR= "+ex.getMessage());
         }
     }
-    @GetMapping("/listProducts")
+    @GetMapping()
     @Produces(MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
     public ProductsResponse listProducts()

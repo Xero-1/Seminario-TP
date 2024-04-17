@@ -3,13 +3,14 @@ package linux4.life.Final.Models;
 
 import javax.persistence.*;
 
-import lombok.Getter;
-import lombok.Builder;
+import lombok.*;
 
 @Table(name="product")
 @Entity
-@Getter
 @Builder
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Product
 {
     @Id

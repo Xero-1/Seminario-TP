@@ -20,19 +20,14 @@ public class ProductService
     private ProductMapper productMapper;
 
     /******CRUD******/
-    public ResponseEntity addProduct(ProductRequest productRequest)
-    {
-        Product product=productRequestToNewProduct(productRequest);
-        saveProduct(product);
-        return ResponseEntity.ok("New product: "+product.getName()+" added.");
-    }
     public ResponseEntity updateProduct(ProductRequest productRequest,Long id)
     {
         try
         {
             Product product=productRepository.getById(id);
+            System.out.println("Product name="+product.getName());
             product=productRequestToExistedProduct(productRequest);
-            productRepository.save(product);
+            saveProduct(product);
             return ResponseEntity.ok("Product updated.");
         }
         catch(Exception e)
@@ -40,6 +35,13 @@ public class ProductService
             return ResponseEntity.badRequest().body("Product with id= "+id+" not founded.");
         }
     }
+    public ResponseEntity addProduct(ProductRequest productRequest)
+    {
+        Product product=productRequestToNewProduct(productRequest);
+        saveProduct(product);
+        return ResponseEntity.ok("New product: "+product.getName());
+    }
+
     public void saveProduct(Product product)
     {
         productRepository.save(product);
